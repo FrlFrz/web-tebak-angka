@@ -7,6 +7,8 @@
     padding: 0;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
     background-image: url(img/bg1.png);
 }
@@ -16,7 +18,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.85);
     position: absolute;
     display: none;
 }
@@ -88,7 +90,7 @@ img {
     border-radius: 40px;
     border: 2px solid black;
     transition: .5s;
-    box-shadow: 2px 2px 5px 1px black;
+    box-shadow: 2px 2px 5px 1px lightblue;
     margin: 0 15px;
 }
 
@@ -150,3 +152,22 @@ img {
 .htp .accept:hover {
     border: 1px solid lightblue;
 }
+
+.player {
+    margin-top: 70px;
+    background-color: blueviolet;
+    display: none;
+    border-radius: 13px;
+    padding: 10px;
+}
+
+.player ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.player li {
+    margin: 10px;
+}
+
+.player li img { cursor: pointer; }
